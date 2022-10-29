@@ -1,4 +1,3 @@
-//UC2-Ability to peak and pop from the Stack till it is empty
 package com.bridgelabz.stackqueue;
 
 import java.util.LinkedList;
@@ -6,6 +5,7 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class StackQueue {
+    //method for creating stack
     //method for creating stack
     public void stack() {
         System.out.println("** Stack **");
@@ -19,6 +19,7 @@ public class StackQueue {
 
         System.out.println("Stack = " +stack);
 
+        //UC2-Ability to peak and pop from the Stack till it is empty
         //peak stack 1st element
         int peak1 = stack.peek();
         System.out.println("Peek element = " +peak1);
@@ -33,7 +34,7 @@ public class StackQueue {
 
         //pop the stack 2nd element
         int pop2 = stack.pop();
-        System.out.println("Pop element = " +pop2);
+        System.out.println("Po element = " +pop2);
 
 
         //peak stack 3rd element
@@ -42,7 +43,7 @@ public class StackQueue {
 
         //pop the stack 3rd element
         int pop3 = stack.pop();
-        System.out.println("Pop element = " +pop3);
+        System.out.println("Pope element = " +pop3);
 
 
         System.out.println();
@@ -51,12 +52,11 @@ public class StackQueue {
 
 
         System.out.println();
-        System.out.println("** Stack **");
+        System.out.println("** Stack Elements **");
     }
 
     //method for creating queue
     public void queue() {
-        System.out.println();
         System.out.println("** Queue **");
         System.out.println();
         Queue<Integer> queue = new LinkedList<>();
@@ -68,13 +68,29 @@ public class StackQueue {
 
         System.out.println("Queue = " +queue);
 
+        //UC4=Ability to dequeue from the beginning
+
+        int dequeue1 = queue.remove();
+        System.out.println("Remove((Dequeue) = " +dequeue1);
+
+        int dequeue2 = queue.remove();
+        System.out.println("Remove((Dequeue) = " +dequeue2);
+
+        int dequeue3 = queue.remove();
+        System.out.println("Remove((Dequeue) = " +dequeue3);
+
+
+        System.out.println("After Dequeue = " +queue);
+
 
         System.out.println();
-        System.out.println("** Queue **");
+        System.out.println("** Queue Elements**");
     }
+
     public static void main(String[] args) {
         StackQueue stackQueue = new StackQueue();
         stackQueue.stack();
+        System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
         stackQueue.queue();
     }
 
